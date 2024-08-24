@@ -6,6 +6,7 @@ namespace Productreview.Models
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<Review> Reviews { get; set; }
+        public DbSet<AdminLogin> AdminLogins { get; set; }
         private readonly IConfiguration _configuration;
 
         public AppDbContext(DbContextOptions<AppDbContext> options, IConfiguration configuration)
